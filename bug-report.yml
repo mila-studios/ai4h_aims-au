@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in the code, data files, or documentation doesn't work
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where
+      options:
+        - code/ (shared experiment codebase)
+        - papers/aimsqa/src/ (AIMS-QA pipeline)
+        - Dataset files
+        - Documentation / links
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: Include the exact command you ran and the full error output.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "e.g. macOS 15.2, Python 3.11.4, torch 2.4.0, CPU only"
+    validations:
+      required: true

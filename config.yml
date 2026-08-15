@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Project AIMS website
+    url: https://mila.quebec/en/ai4humanity/applied-projects/ai-against-modern-slavery-aims
+    about: Project overview, publications, and team.
+  - name: Dataset on Figshare
+    url: https://doi.org/10.6084/m9.figshare.28489340
+    about: Download AIMS.au, AIMS.uk, and AIMS.ca, plus the annotation specifications.
+  - name: Dataset on Hugging Face
+    url: https://huggingface.co/datasets/mila-ai4h/AIMS.au
+    about: Load the annotated Australian subset directly.
