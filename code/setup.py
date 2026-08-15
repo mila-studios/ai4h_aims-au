@@ -14,7 +14,7 @@ setuptools.setup(
     description="QUT01 AI Against Modern Slavery (AIMS) Project Package",
     author="plstcharles",
     author_email="pierreluc.stcharles@mila.quebec",
-    url="https://github.com/milatechtransfer/qut01-aims",
+        url="https://github.com/mila-studios/ai4h_aims-au",
     install_requires=["lightning", "hydra-core"],
     packages=setuptools.find_packages(),
 )
