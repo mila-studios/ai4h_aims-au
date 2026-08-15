@@ -1,0 +1,4 @@
+pandas>=2.2
+scikit-learn>=1.4
+sentence-transformers==4.1.0
+torch>=2.5
