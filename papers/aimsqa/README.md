@@ -134,8 +134,8 @@ be measured against.
 |---|---|
 | Code | [`src/`](src/) — cleaned end-to-end pipeline |
 | Question taxonomy | *TODO: publish the 209 questions and the 37-question priority framework as CSV/YAML in this folder* |
-| Agent 1 classifier weights | [`au.pth`](https://drive.google.com/drive/folders/1MqAGkXt4-6S6go0ctsPkLQKvkwgLu7GZ) — Google Drive, 1.47 GB (the [AIMSDistill](../aimsdistill/) AU student) |
-| Agent 2 retriever weights | *not yet released — see `src/download_models.py`* |
+| Agent 1 classifier weights | [Figshare DOI 10.6084/m9.figshare.33261576](https://doi.org/10.6084/m9.figshare.33261576) — `au.pth`, 1.47 GB, the [AIMSDistill](../aimsdistill/) Australian student |
+| Agent 2 retriever weights | [Figshare DOI 10.6084/m9.figshare.33261639](https://doi.org/10.6084/m9.figshare.33261639) — 80 MB zip, complete SentenceTransformer directory |
 | Statement data | AIMS.au — see [`../aims-au/`](../aims-au/) |
 
 > **The taxonomy deserves its own file.** The 209-question table is the artefact other researchers
