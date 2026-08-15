@@ -171,9 +171,10 @@ AU, UK, and CA (learning rate, epochs, temperature, β), and the released weight
 jurisdiction. `au.pth` is also the classifier behind [AIMS-QA](../aimsqa/)'s Agent 1 — same 1.47 GB
 artefact, so publishing it once serves both papers.
 
-> **Note on hosting.** The weights are on Google Drive and the code is on a personal GitHub
-> account, so neither has a DOI. Keep both URLs alive — they are what the published paper cites.
-
+> **Note on hosting.** The weights are archived on Figshare with a DOI. The code is on a
+> personal GitHub account, so it has no DOI — keep that URL alive, it is what the published
+> paper cites.
+> 
 ## Citation
 
 ```bibtex
