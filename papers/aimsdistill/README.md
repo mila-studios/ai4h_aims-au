@@ -9,7 +9,7 @@
 **Venue:** *Expert Systems with Applications*, vol. 332, art. 133691 (2026) ·
 **DOI:** [10.1016/j.eswa.2026.133691](https://doi.org/10.1016/j.eswa.2026.133691)
 
-Adriana Eufrosina Bora¹² *, Duoyi Zhang³ * ✉, Md Abul Bashar³, Richi Nayak³, Kerrie Mengersen¹
+Adriana Eufrosina Bora¹² *, Duoyi Zhang³ *, Md Abul Bashar³, Richi Nayak³, Kerrie Mengersen¹
 <sub>¹ School of Mathematical Sciences, QUT · ² Mila — Quebec AI Institute · ³ School of Computer Science, QUT · \* equal contribution · ✉ corresponding author</sub>
 
 ← [Back to Project AIMS](../../README.md)
