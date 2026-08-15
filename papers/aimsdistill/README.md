@@ -11,7 +11,7 @@
 
 Adriana Eufrosina Bora¹² *, Duoyi Zhang³ *, Md Abul Bashar³, Richi Nayak³, Kerrie Mengersen¹
 
-<sub>¹ School of Mathematical Sciences, QUT · ² Mila — Quebec AI Institute · ³ School of Computer Science, QUT · \* equal contribution · ✉ corresponding author</sub>
+<sub>¹ School of Mathematical Sciences, QUT · ² Mila — Quebec AI Institute · ³ School of Computer Science, QUT · \* equal contribution </sub>
 
 ← [Back to Project AIMS](../../README.md)
 
