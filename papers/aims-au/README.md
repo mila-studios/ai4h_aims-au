@@ -9,6 +9,10 @@
 
 **Venue:** ICLR 2025 · **Paper:** [arXiv:2502.07022](https://arxiv.org/abs/2502.07022)
 
+Adriana Eufrosina Bora¹², Pierre-Luc St-Charles¹, Mirko Bronzi¹, Arsène Fansi Tchango¹, Bruno Rousseau¹, Kerrie Mengersen²
+
+<sub>¹ Mila — Quebec AI Institute · ² Queensland University of Technology</sub>
+
 ← [Back to Project AIMS](../../README.md)
 
 ---
