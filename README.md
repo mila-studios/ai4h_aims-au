@@ -28,7 +28,7 @@
 
 Modern slavery legislation in Australia, the UK, and Canada requires large organisations to publish
 annual statements describing what they are doing about modern slavery risks in their operations and
-supply chains. More than **90,000 statements** now sit across the three national registries. Reading
+supply chains. **Hundreds of thousands of statements** now sit across the three national registries. Reading
 them, comparing them, and judging whether they actually meet the mandatory reporting criteria is
 slow, expert-intensive work — so most statements are never meaningfully reviewed.
 
