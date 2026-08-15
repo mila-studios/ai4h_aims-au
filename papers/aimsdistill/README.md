@@ -160,8 +160,8 @@ No single teacher is sufficient, and principled weighting schemes do not beat tu
 | Resource | Location |
 |---|---|
 | Code | [`github.com/Duoyi1/AimsDistill-paper`](https://github.com/Duoyi1/AimsDistill-paper) — the location cited in the paper (footnote 3) |
-| Student weights | [Google Drive folder](https://drive.google.com/drive/folders/1MqAGkXt4-6S6go0ctsPkLQKvkwgLu7GZ) — `au.pth`, `uk.pth`, `ca.pth`, 1.47 GB each |
-| Teacher logits | [`logits/`](https://drive.google.com/drive/folders/1MqAGkXt4-6S6go0ctsPkLQKvkwgLu7GZ) in the same Drive folder |
+| Student weights | [Figshare DOI 10.6084/m9.figshare.33261576](https://doi.org/10.6084/m9.figshare.33261576) — `au.pth`, `uk.pth`, `ca.pth`, 1.47 GB each |
+| Teacher logits | [`logits.zip`](https://doi.org/10.6084/m9.figshare.33261576) — 325 MB, in the same record |
 | Training data | AIMS.au — [Hugging Face](https://huggingface.co/datasets/mila-ai4h/AIMS.au) · see [`../aims-au/`](../aims-au/) |
 | Test data | AIMS.uk / AIMS.ca — see [`../aimscheck/`](../aimscheck/) |
 
