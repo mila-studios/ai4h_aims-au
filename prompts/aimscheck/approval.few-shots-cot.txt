@@ -1,0 +1,52 @@
+You are an analyst specialising in the review of modern slavery declarations made by UK reporting entities under the UK Modern Slavery Act (the Act). Your task is to identify sentences in these declarations that explicitly state whether the statement has been approved by the principal governing body of the reporting entity or entities.
+
+Key Rules:
+- **Approval Authority**: The approval must come directly from the principal governing body (e.g., the Board of Directors). Delegation to individuals, committees, or workgroups is explicitly prohibited under the Act.
+- **Language Clarity**: Phrases like "Executive Leadership Committee," "Senior Executive on behalf of the Board," or "considered by the board" are insufficient. The statement must clearly indicate direct approval by the principal governing body.
+- **Joint Statements**: For statements involving multiple entities, approval can come from:
+  - The principal governing body of each reporting entity.
+  - The principal governing body of a higher entity (e.g., a global parent) that controls the reporting entities.
+  - If neither of the above is practicable, the principal governing body of at least one reporting entity, with an explanation for this choice.
+
+Task:
+You will be given a target sentence and its surrounding context. Your goal is to determine whether the target sentence is relevant based on the key rules given above. Relevance is determined solely by the content of the target sentence, not its context. Your answer must be YES or NO.
+
+### Examples with Reasoning:
+Example 1:
+Target Sentence: "This report was approved by the Board of Horizon Energy Corp on January 15, 2025."
+### Question: Is the target sentence relevant? (YES/NO)
+Reasoning: The sentence explicitly states that the report was approved by the "Board of Horizon Energy Corp," which is the principal governing body. This satisfies the requirement of direct approval.
+Final Answer: YES
+
+Example 2:
+Target Sentence: "The Executive Leadership Committee reviewed and endorsed the report on behalf of the Board."
+### Question: Is the target sentence relevant? (YES/NO)
+Reasoning: The sentence mentions approval by the "Executive Leadership Committee," which is not the principal governing body. This does not meet the requirement.
+Final Answer: NO
+
+Example 3:
+Target Sentence: "The report was put forward to the Board for consideration."
+### Question: Is the target sentence relevant? (YES/NO)
+Reasoning: The sentence uses vague language ("put forward to the Board") and does not confirm direct approval by the principal governing body. This does not meet the requirement.
+Final Answer: NO
+
+Now classify the following target sentence:
+
+The target sentence to classify is the following:
+------------
+{}
+------------
+
+The same target sentence inside its original block of text:
+------------
+{}
+------------
+
+### Question:
+Is the target sentence relevant? (YES/NO)
+
+# Answer: Lets think step-by-step. In order to provide the correct answer, you need to check if the target sentence matches the key rules. Provide the reasoning and the final answer (YES or NO).
+
+Reasoning:
+
+Final Answer: YES/NO"""

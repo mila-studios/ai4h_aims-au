@@ -1,0 +1,99 @@
+You are an analyst specialising in the review of modern slavery declarations made by UK reporting entities under the UK Modern Slavery Act (the Act). Your task is to identify sentences in these declarations that explicitly describe the relevant actions to identify, assess, or mitigate modern slavery risks.
+
+Key Rules:
+**Relevant sentences**: Relevant sentences may include descriptions of relevant actions such as: 
+
+Participating in or launching industry initiatives (e.g. UN Global Compact, or Finance Against Slavery and Trafficking Initiative), or providing financial support to such initiatives;
+Requiring suppliers and third-party entities to comply and follow with internal, regional, or international policies or labor laws (e.g. by adopting a supplier code of conduct or contract terms);
+Ensuring that employees, suppliers, or other stakeholders are aware of the company’s policies and requirements (e.g. by conducting training sessions on modern slavery or on policies);
+Requiring employees to follow company guidelines regarding human rights, labour rights, association (or unionization) rights, responsible recruitment, and/or responsible procurement (e.g. by adopting a code of conduct or a code of ethics that is linked with modern slavery);
+Adopting, drafting, updating, or upholding a policy, framework, standard, or program that is meant to identify risks of modern slavery; for instance, a company may propose a formal process for: 
+Conducting desk research by reviewing secondary sources of information (e.g. reports from international organizations, frameworks such as the UN Guiding Principles, or research papers and articles on modern slavery) or by reviewing external expert advisers’ inputs;
+Utilizing risk management tools or software (e.g. SEDEX);
+Conducting risk-based questionnaires, surveys, or interviews with employees, suppliers, or other stakeholders;
+Auditing, screening, or directly engaging with employees, suppliers, or other stakeholders.
+Committing to paying all employees, migrant workers, temporary workers, and third-party workers a “living wage”, to support their freedom of association (or unionization), or to support collective bargaining;
+Adopting a code of conduct or code of ethics that relates to combatting or preventing modern slavery and forced labour practices;
+Incorporating provisions for onboarding and engaging with suppliers, including contract clauses and requirements, and extending the code of conduct to cover suppliers;
+Enforcing responsible recruitment of workers (e.g., by not allowing the payment of recruitment fees by workers, or by not withholding part of their compensation for housing or licensing costs);
+Implementing responsible procurement practices when establishing new supply chains (e.g., no excessive pressure on lead times for products or services they source);
+Having a zero-tolerance policy that would force the entity to take action regarding threats, regarding intimidation and attacks against human rights defenders, or regarding modern slavery cases tied to their suppliers;
+Establishing a whistleblowing policy that encourages and safeguards workers, employees, suppliers, or other stakeholders when reporting concerns;
+Ensuring that modern slavery cases or concerns are reported (e.g. by adopting a whistleblowing hotline or other reporting mechanism);
+Ensuring the application of these policies or frameworks by having an executive or board member participate in their elaboration or in oversight committees.
+
+**Irrelevant sentences** may include: 
+Vague language stating that the reporting entity has “zero tolerance” towards modern slavery without mentioning a policy in this regard,  or that it “is committed to fight” modern slavery is very common. However, such declarations do not describe a RELEVANT ACTION unless they are  linked for example with a company policy.
+Not every policy implemented by an entity is necessarily linked to modern slavery. If a policy—such as a sustainability or anti-bribery policy—does not explicitly address modern slavery, the justification for its adoption must clarify why it is a relevant mitigation action; otherwise, it lacks relevance.  
+The description alone of tools (e.g. dashboards, software) used to monitor and track modern slavery risks is not sufficient. Only the development and use of those tools are actions and, therefore, relevant).
+Any description of audit measures or other measures meant to assess the effectiveness of existing PROCESSES and ACTIONS meant to prevent modern slavery (e.g. an assestment of a supplier audit process) is not relevant.  
+
+Task:
+You will be given a target sentence and its surrounding context. Your goal is to determine whether the target sentence is relevant based on the key rules given above. Relevance is determined solely by the content of the target sentence, not its context. Your answer must be YES or NO.
+
+### Examples with Reasoning:
+Example 1: 
+
+Target Sentence:
+"We require all suppliers to sign our Supplier Code of Conduct, which prohibits forced labor and human trafficking."
+
+###Question: Is the target sentence relevant? (YES/NO)
+
+Reasoning:
+This sentence explicitly describes a mitigation action—requiring suppliers to sign a Supplier Code of Conduct that prohibits forced labor and human trafficking. This qualifies as a supplier requirement and enforcement mechanism.
+
+Final Answer: YES
+
+Example 2:
+Target Sentence:
+"We conducted a risk assessment of our suppliers using SEDEX and identified high-risk areas for modern slavery."
+
+###Question: Is the target sentence relevant? (YES/NO)
+
+Reasoning:
+This sentence describes a risk identification action—conducting a supplier risk assessment using SEDEX. This directly relates to identifying modern slavery risks.
+
+Final Answer: YES
+
+Example 3:
+Target Sentence:
+"Our company has a zero-tolerance approach to modern slavery."
+
+###Question: Is the target sentence relevant? (YES/NO)
+
+Reasoning:
+The statement lacks a description of an actual action taken. Simply having a "zero-tolerance approach" does not specify enforcement mechanisms, policies, or training.
+
+Final Answer: NO
+
+Example 4:
+Target Sentence:
+"We expect our suppliers to respect local laws."
+
+###Question: Is the target sentence relevant? (YES/NO)
+
+Reasoning:
+The statement only expresses an expectation but does not describe any enforcement action. It does not mention requiring compliance through a supplier code of conduct, contract terms, or audits. Therefore, it does not qualify as a mitigation action.
+
+Final Answer: NO
+
+Now classify the following target sentence:
+
+The target sentence to classify is the following:
+------------
+{}
+------------
+
+The same target sentence inside its original block of text:
+------------
+{}
+------------
+
+### Question:
+Is the target sentence relevant? (YES/NO)
+
+# Answer: Lets think step-by-step. In order to provide the correct answer, you need to check if the target sentence matches the key rules. Provide the reasoning and the final answer (YES or NO).
+
+Reasoning:
+
+Final Answer: YES/NO"""

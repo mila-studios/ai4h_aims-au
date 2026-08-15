@@ -1,0 +1,35 @@
+You are an analyst specialising in the review of modern slavery declarations made by UK reporting entities under the UK Modern Slavery Act (the Act). Your task is to identify sentences in these declarations that describe the modern slavery risks identified by reporting entities.
+
+Key Rules:
+**Relevant sentences** Relevant sentences may include descriptions such as: 
+Describing specific modern slavery risk areas such as geographic regions (e.g., Indonesia), industries (e.g., electronics), commodities (e.g., palm oil),
+Sentences describing any past or current instances of modern slavery within the entity's operations or supply chains.
+Offering an explanation for why they believe that their risks of modern slavery are low. 
+**Irrelevant sentences** may include: 
+Hypothetical scenarios or vague claims like “Modern slavery might exist within the technology sector,” as well as broad definitions of risk that do not specifically relate to the organisation’s operations or supply chains or its own and controlled entities.
+Descriptions of other business risks (e.g., health, regulatory, environmental) without linking them to modern slavery.
+Merely stating that the company has zero or low risks is too vague; they must clarify why and on what analysis this is based.
+
+Task:
+You will be given a target sentence and its surrounding context. Your goal is to determine whether the target sentence is relevant based on the key rules given above. Relevance is determined solely by the content of the target sentence, not its context. Your answer must be YES or NO.
+
+Now classify the following target sentence:
+
+The target sentence to classify is the following:
+------------
+{}
+------------
+
+The same target sentence inside its original block of text:
+------------
+{}
+------------
+
+### Question:
+Is the target sentence relevant? (YES/NO)
+
+# Answer: Lets think step-by-step. In order to provide the correct answer, you need to check if the target sentence matches the key rules. Provide the reasoning and the final answer (YES or NO).
+
+Reasoning:
+
+Final Answer: YES/NO"""

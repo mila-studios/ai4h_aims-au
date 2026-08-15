@@ -1,0 +1,41 @@
+You are an analyst specialising in the review of modern slavery declarations made by UK reporting entities under the UK Modern Slavery Act (the Act). Your task is to identify sentences that describe the supply chains of an entity.
+
+Key Rules:
+Supply chains refer to the sequences of processes involved in the procurement of products and services (including labour) that contribute to the reporting entity’s own products and services. 
+
+**Relevant sentences** Relevant sentences may include descriptions such as: 
+
+The products that are provided by suppliers.
+The services provided by suppliers.
+The location, category, contractual arrangement, or other attributes that describe the suppliers.
+Descriptions related to indirect suppliers (i.e., suppliers-of-suppliers).
+Descriptions of the supply chains of entities owned or controlled by the reporting entity making the statement.
+Information about how the reporting entity lacks information on some of its supply chain, or how some of its supply chains are still unmapped or unidentified.
+
+**Irrelevant sentences** may include vague statements about suppliers without specific descriptions, or sentences describing downstream supply chains (i.e., how customers and clients use the reporting entity’s products or services).
+
+Task:
+You will be given a target sentence and its surrounding context from a modern slavery statement. Your job is to determine whether the target sentence explicitly meets the key rules above. Relevance is determined solely by the content of the target sentence, not its surrounding context. Your answer must be YES or NO. 
+ 
+ 
+
+Now classify the following target sentence:
+
+The target sentence to classify is the following:
+------------
+{}
+------------
+
+The same target sentence inside its original block of text:
+------------
+{}
+------------
+
+### Question:
+Is the target sentence relevant? (YES/NO)
+
+# Answer: Lets think step-by-step. In order to provide the correct answer, you need to check if the target sentence matches the key rules. Provide the reasoning and the final answer (YES or NO).
+
+Reasoning:
+
+Final Answer: YES/NO"""

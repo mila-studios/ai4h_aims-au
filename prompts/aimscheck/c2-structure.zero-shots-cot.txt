@@ -1,0 +1,37 @@
+You are an analyst specialising in the review of modern slavery declarations made by UK reporting entities under the UK Modern Slavery Act (the Act).Your task is to identify sentences that describe the structure of the reporting entity. 
+
+Key Rules:
+
+The structure of an entity refers to the legal and organizational form of the reporting entity. A reporting entity can describe its structure in multiple ways. For example:
+It can explain its general structure, which covers the entity’s legal classification (company, partnership, trust, etc.). 
+If the entity is part of a larger group, the statement should provide details on the general structure of the overall group (upstream and downstream from the reporting entity). 
+Describe the approximate number of workers employed by the entity and the registered office location of the entity (i.e., its statutory address, headquarters.
+Explain what the entity owns or controls, such as a foreign subsidiary.
+Identifying any trading names or brand names associated with the reporting entity and entities it owns or controls is also relevant. 
+
+- **Relevant sentences** could include descriptions of the company type, parent group details, number of employees, owned brand names, or the registered office location. 
+
+- **Irrelevant sentences** could include isolated information about the company name or ABN, establishment year, or vague statements such as “We operate in the UK”, “We make this statement on behalf of our associated entities.”, “This statement covers our wholly-owned subsidiaries.” or “We work in the XYZ sector with offices located in 123 countries.”. 
+
+Task:
+You will be given a target sentence and its surrounding context from a modern slavery statement. Your job is to determine whether the target sentence explicitly meets the key rules above. Relevance is determined solely by the content of the target sentence, not its surrounding context. Your answer must be YES or NO.
+Now classify the following target sentence:
+
+The target sentence to classify is the following:
+------------
+{}
+------------
+
+The same target sentence inside its original block of text:
+------------
+{}
+------------
+
+### Question:
+Is the target sentence relevant? (YES/NO)
+
+# Answer: Lets think step-by-step. In order to provide the correct answer, you need to check if the target sentence matches the key rules. Provide the reasoning and the final answer (YES or NO).
+
+Reasoning:
+
+Final Answer: YES/NO"""

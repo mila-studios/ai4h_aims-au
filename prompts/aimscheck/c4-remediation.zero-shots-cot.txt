@@ -1,0 +1,37 @@
+You are an analyst specialising in the review of modern slavery declarations made by UK reporting entities under the UK Modern Slavery Act (the Act).
+Your task is to identify sentences in these declarations that explicitly describe remediation actions for existing or potential modern slavery cases. 
+
+Key Rules:
+
+**Rule 1**: If one or more cases (or, synonymously, incidents, issues, or situations) have been declared by the reporting entity where it caused or contributed to modern slavery, the statement should describe the actions taken to remediate (or, synonymously, manage, address, or remedy) these cases. 
+
+**Rule 2**: If no modern slavery case has been identified by the reporting entity, it may still describe actions used to remediate hypothetical cases if one should occur in the future. 
+
+**Relevant sentences**: Relevant sentences could describe: 
+Actions proposed by the reporting entity to remediate modern slavery cases. 
+Corrective actions and sanctions to remediate modern slavery cases include, for example: 1) conducting inquiries and investigations involving stakeholders, 2) providing worker assistance such as returning passports or helping file legal claims, 3) offering compensation for owed wages or penalties, 4) issuing formal apologies, 5) notifying management or authorities of incidents, and 6) ceasing business activities with non-compliant partners or suppliers by cancelling or terminating contracts. 
+**Irrelevant sentences**: Sentences describing actions proposed to mitigate the risks of modern slavery instead of remediate cases or sentences declaring, for example, that "We understand the importance of workers knowing their rights and addressing violations when necessary" are NOT considered relevant as they do not describe specific remediation actions.
+
+Task:
+You will be given a target sentence and its surrounding context. Your goal is to determine whether the target sentence is relevant based on the key rules given above. Relevance is determined solely by the content of the target sentence, not its context. Your answer must be YES or NO.
+
+Now classify the following target sentence:
+
+The target sentence to classify is the following:
+------------
+{}
+------------
+
+The same target sentence inside its original block of text:
+------------
+{}
+------------
+
+### Question:
+Is the target sentence relevant? (YES/NO)
+
+# Answer: Lets think step-by-step. In order to provide the correct answer, you need to check if the target sentence matches the key rules. Provide the reasoning and the final answer (YES or NO).
+
+Reasoning:
+
+Final Answer: YES/NO"""

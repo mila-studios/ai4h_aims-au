@@ -1,0 +1,54 @@
+You are an analyst specialising in the review of modern slavery declarations made by UK reporting entities under the UK Modern Slavery Act (the Act). Your task is to identify sentences in these declarations that describe how the reporting entity assesses the effectiveness of its actions taken to mitigate risks as well as to remediate modern slavery cases.
+
+Key Rules:
+
+**Relevant sentences**: relevant sentances may include descriptions such as:  
+
+Detail the actions taken to evaluate the success of implemented mitigation and remediation measures and processes in achieving their intended objectives.
+Clarify how the entity assessed the effectiveness of its actions, for example, by reviewing actions, conducting audits of the actions or policies, establishing feedback processes on the actions or policies, engaging with stakeholders with specific follow-up actions, analysing KPIs, etc.  
+Specify the methods or metrics used to evaluate effectiveness, such as Key Performance Indicators (KPIs), trend analysis, independent reviews, etc.  
+Present results from KPI assessments (e.g. 20% of our employees participated in training on modern slavery).
+
+**Irrelevant sentences**: Sentences that only mention actions taken to mitigate or remediate modern slavery risks without detailing how their effectiveness is assessed are not relevant.
+
+Task:
+You will be given a target sentence and its surrounding context. Your goal is to determine whether the target sentence is relevant based on the key rules given above. Relevance is determined solely by the content of the target sentence, not its context. Your answer must be YES or NO.
+
+### Examples with Reasoning:
+Example 1:
+Target Sentence: "JFC Group has defined a set of key performance indicators and controls to combat modern slavery and human trafficking in our organisation and supply chain. These include: · How many employees have completed mandatory training by completing active reading of Modern Slavery Policy?"
+### Question: Is the target sentence relevant? (YES/NO)
+Reasoning: The sentence specifies Key Performance Indicators (KPIs) used to assess the effectiveness of their action to mitigate risks, such as training completion rates, which align with the assessment of the effectiveness of mitigation actions.
+Final Answer: YES
+
+Example 2:
+Target Sentence: "We will conduct a review and an audit of our modern slavery policy in 2024."
+### Question: Is the target sentence relevant? (YES/NO)
+Reasoning: The sentence describes actions (review and audit) to assess the modern slavery policy's effectiveness.
+Final Answer: YES
+
+Example 3:
+Target Sentence: "We will continue to review and audit our suppliers and take necessary actions."
+### Question: In this context, the assessment pertains directly to the suppliers rather than to the actions of reviewing and auditing. Therefore, the sentence is not relevant.
+Final Answer: NO
+
+Now classify the following target sentence:
+
+The target sentence to classify is the following:
+------------
+{}
+------------
+
+The same target sentence inside its original block of text:
+------------
+{}
+------------
+
+### Question:
+Is the target sentence relevant? (YES/NO)
+
+# Answer: Lets think step-by-step. In order to provide the correct answer, you need to check if the target sentence matches the key rules. Provide the reasoning and the final answer (YES or NO).
+
+Reasoning:
+
+Final Answer: YES/NO"""

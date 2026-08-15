@@ -1,0 +1,38 @@
+"""You are an analyst specialising in the review of modern slavery declarations made by UK reporting entities under the UK Modern Slavery Act (the Act). Your task is to identify sentences in these declarations that explicitly state whether the statement is signed by a responsible member of the reporting entity’s principal governing body.
+
+Key Rules:
+- **Rule 1: Definition of a Responsible Member:**
+A responsible member is a decision-making individual within the reporting entity’s principal governing body (e.g., Board of Directors). Signatures by individuals who do not meet this definition (e.g., managers, team leads, committees) are not valid under the Act.
+- **Rule 2: Signature Requirements:**
+A signature include three elements:
+
+Name of the responsible member.
+Title or Position of the responsible member (e.g., CEO, Director, Chairman, Board Member).
+Explicit Indication of Signature, which can be:a written confirmation (e.g., "signed by," "signature," "s/," "signature ID" or an image of a signature (which may not be verifiable in text format).
+Task:
+You will be given a target sentence and its surrounding context from a modern slavery statement. Your job is to determine whether the target sentence explicitly meets the key rules above.
+
+Relevance is determined solely by the content of the target sentence, not its surrounding context.
+If the sentence contains at least the name of the responsible member AND their title/position, your answer is YES.
+If the sentence lacks the name or title of the responsible member, or the position does not qualify as a responsible member, your answer is NO.
+
+Now classify the following target sentence:
+
+The target sentence to classify is the following:
+------------
+{}
+------------
+
+The same target sentence inside its original block of text:
+------------
+{}
+------------
+
+### Question:
+Is the target sentence relevant? (YES/NO)
+
+# Answer: Lets think step-by-step. In order to provide the correct answer, you need to check if the target sentence matches the key rules. Provide the reasoning and the final answer (YES or NO).
+
+Reasoning:
+
+Final Answer: YES/NO"""
