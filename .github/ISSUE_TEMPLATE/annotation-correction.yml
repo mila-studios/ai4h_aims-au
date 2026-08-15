@@ -1,0 +1,69 @@
+name: Annotation correction
+description: Report a sentence you believe is labelled incorrectly in AIMS.au, AIMS.uk, or AIMS.ca
+title: "[annotation] "
+labels: ["annotation", "data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Compliance judgements are genuinely contestable, so please
+        include your reasoning — we treat disagreement between careful readers as useful signal.
+
+        **All three datasets are annotated against the Australian Modern Slavery Act criteria.**
+        That single scheme is what keeps AIMS.au, AIMS.uk, and AIMS.ca comparable, so please assess
+        the label against the AU MSA criteria and the Annotation Specifications rather than local
+        UK or Canadian wording.
+
+  - type: dropdown
+    id: dataset
+    attributes:
+      label: Dataset
+      options:
+        - AIMS.au
+        - AIMS.uk
+        - AIMS.ca
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: statement_id
+    attributes:
+      label: Statement ID
+      placeholder: "e.g. 12532"
+    validations:
+      required: true
+
+  - type: textarea
+    id: sentence
+    attributes:
+      label: The sentence
+      description: Paste the sentence exactly as it appears in the data.
+    validations:
+      required: true
+
+  - type: input
+    id: current_label
+    attributes:
+      label: Current label
+      placeholder: "e.g. C4 (risk mitigation) = 1"
+    validations:
+      required: true
+
+  - type: input
+    id: proposed_label
+    attributes:
+      label: Proposed label
+      placeholder: "e.g. C4 (risk mitigation) = 0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Why
+      description: >
+        What in the sentence, its context, or the annotation guidelines supports your reading?
+        Reference the Annotation Specifications PDF if relevant.
+    validations:
+      required: true
