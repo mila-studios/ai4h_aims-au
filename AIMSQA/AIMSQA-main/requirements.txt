@@ -1,6 +1,0 @@
-numpy>=1.26
-ollama>=0.4
-pandas>=2.2
-sentence-transformers>=3.4
-torch>=2.2
-transformers>=4.48
