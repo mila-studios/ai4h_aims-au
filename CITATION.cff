@@ -1,0 +1,167 @@
+cff-version: 1.2.0
+title: "Project AIMS (AI Against Modern Slavery) — Phase 2"
+message: >-
+  If you use this repository, its datasets, or its models, please cite the
+  relevant paper below. AIMS.au is the preferred citation for the dataset;
+  AIMSCheck for the review framework.
+type: dataset
+abstract: >-
+  Open datasets, models, and frameworks for analysing corporate modern slavery
+  statements filed under the Australian, UK, and Canadian Modern Slavery Acts,
+  including expert sentence-level annotations aligned to mandatory reporting
+  criteria.
+authors:
+  - family-names: Bora
+    given-names: Adriana Eufrosina
+    affiliation: Mila — Quebec AI Institute
+  - family-names: St-Charles
+    given-names: Pierre-Luc
+    affiliation: Mila — Quebec AI Institute
+  - family-names: Arodi
+    given-names: Akshatha
+    affiliation: Mila — Quebec AI Institute
+  - family-names: Zhang
+    given-names: Duoyi
+    affiliation: Queensland University of Technology
+  - family-names: Bannister
+    given-names: Jordan
+    affiliation: Mila — Quebec AI Institute
+  - family-names: Bronzi
+    given-names: Mirko
+    affiliation: Mila — Quebec AI Institute
+  - family-names: Fansi Tchango
+    given-names: Arsène
+    affiliation: Mila — Quebec AI Institute
+  - family-names: Rousseau
+    given-names: Bruno
+    affiliation: Mila — Quebec AI Institute
+  - family-names: Bashar
+    given-names: Md Abul
+    affiliation: Queensland University of Technology
+  - family-names: Nayak
+    given-names: Richi
+    affiliation: Queensland University of Technology
+  - family-names: Thinyane
+    given-names: Hannah
+    affiliation: Diginex Ltd
+  - family-names: Mengersen
+    given-names: Kerrie
+    affiliation: Queensland University of Technology
+repository-code: "https://github.com/mila-ai4h/ai4h_aims-au"
+url: "https://mila.quebec/en/ai4humanity/applied-projects/ai-against-modern-slavery-aims"
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - modern slavery
+  - human rights
+  - corporate compliance
+  - natural language processing
+  - large language models
+  - dataset
+  - benchmark
+preferred-citation:
+  type: article
+  title: >-
+    AIMS.au: A Dataset for the Analysis of Modern Slavery Countermeasures in
+    Corporate Statements
+  authors:
+    - family-names: Bora
+      given-names: Adriana Eufrosina
+    - family-names: St-Charles
+      given-names: Pierre-Luc
+    - family-names: Bronzi
+      given-names: Mirko
+    - family-names: Fansi Tchango
+      given-names: Arsène
+    - family-names: Rousseau
+      given-names: Bruno
+    - family-names: Mengersen
+      given-names: Kerrie
+  year: 2025
+  collection-title: "Proceedings of the 13th International Conference on Learning Representations (ICLR 2025)"
+  conference:
+    name: "ICLR 2025"
+    city: Singapore
+    country: SG
+  notes: "Preprint: arXiv:2502.07022"
+  url: "https://openreview.net/forum?id=ybfmpJiKXX"
+references:
+  - type: article
+    title: >-
+      AIMSCheck: Leveraging LLMs for AI-Assisted Review of Modern Slavery
+      Statements Across Jurisdictions
+    authors:
+      - family-names: Bora
+        given-names: Adriana Eufrosina
+      - family-names: Arodi
+        given-names: Akshatha
+      - family-names: Zhang
+        given-names: Duoyi
+      - family-names: Bannister
+        given-names: Jordan
+      - family-names: Bronzi
+        given-names: Mirko
+      - family-names: Fansi Tchango
+        given-names: Arsène
+      - family-names: Bashar
+        given-names: Md Abul
+      - family-names: Nayak
+        given-names: Richi
+      - family-names: Mengersen
+        given-names: Kerrie
+    year: 2025
+    collection-title: >-
+      Proceedings of the 63rd Annual Meeting of the Association for
+      Computational Linguistics (Volume 1: Long Papers)
+    conference:
+      name: "ACL 2025"
+      city: Vienna
+      country: AT
+    notes: "Main conference. Preprint: arXiv:2506.01671"
+    start: 9109
+    end: 9135
+    doi: 10.18653/v1/2025.acl-long.446
+    url: "https://aclanthology.org/2025.acl-long.446/"
+  - type: article
+    title: >-
+      AIMSDistill: Distilling Knowledge from Specialised AI Teachers for
+      Cross-Jurisdictional Compliance Analysis of Modern Slavery Statements
+    authors:
+      - family-names: Bora
+        given-names: Adriana Eufrosina
+      - family-names: Zhang
+        given-names: Duoyi
+      - family-names: Bashar
+        given-names: Md Abul
+      - family-names: Nayak
+        given-names: Richi
+      - family-names: Mengersen
+        given-names: Kerrie
+    year: 2026
+    journal: "Expert Systems with Applications"
+    volume: 332
+    start: 133691
+    issn: "0957-4174"
+    doi: 10.1016/j.eswa.2026.133691
+    url: "https://doi.org/10.1016/j.eswa.2026.133691"
+  - type: article
+    title: >-
+      AIMS-QA: A Framework for Scaling Beyond Compliance the Assessment of
+      Corporate Modern Slavery Statements with AI-driven Question Answering
+    authors:
+      - family-names: Bora
+        given-names: Adriana Eufrosina
+      - family-names: Zhang
+        given-names: Duoyi
+      - family-names: Thinyane
+        given-names: Hannah
+      - family-names: Bashar
+        given-names: Md Abul
+      - family-names: Nayak
+        given-names: Richi
+      - family-names: Mengersen
+        given-names: Kerrie
+    year: 2026
+    journal: "Data & Policy"
+    notes: "Data for Policy conference paper, Cambridge University Press"

@@ -1,299 +1,248 @@
 <div align="center">
-  <img src="https://mila.quebec/sites/default/files/styles/focal_crop_2500_757/public/blocks/imagefullwidth/2548/2024capsuleprojetaims.jpg.webp?itok=4pdx41BG" alt="Project AIMS - AI Against Modern Slavery" width="100%">
+  <img src="assets/banner.jpg" alt="Project AIMS — AI Against Modern Slavery" width="100%">
+
+  <h1>Project AIMS — AI Against Modern Slavery</h1>
+
+  <p><em>Open datasets, models, and frameworks for analysing corporate modern slavery statements at scale.</em></p>
+
+  <p>
+    <a href="https://mila.quebec/en/ai4humanity/applied-projects/ai-against-modern-slavery-aims"><img alt="Project site" src="https://img.shields.io/badge/Project-Website-1f6feb"></a>
+    <a href="https://doi.org/10.6084/m9.figshare.28489340"><img alt="Dataset DOI" src="https://img.shields.io/badge/Dataset%20DOI-10.6084%2Fm9.figshare.28489340-orange"></a>
+    <a href="https://huggingface.co/datasets/mila-ai4h/AIMS.au"><img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-AIMS.au-yellow"></a>
+    <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-CC--BY--4.0%20%2F%20MIT-green"></a>
+    <a href="CITATION.cff"><img alt="Citation" src="https://img.shields.io/badge/Cite-CITATION.cff-blueviolet"></a>
+  </p>
 </div>
-      
-# Project AIMS (AI Against Modern Slavery) - Phase 2
 
-Welcome to the **Project AIMS (AI Against Modern Slavery) Phase 2** repository. This initiative is a collaborative effort between [Mila - Quebec AI Institute](https://mila.quebec/) and [Queensland University of Technology (QUT)](https://www.qut.edu.au/), leveraging artificial intelligence to combat modern slavery through transparency and corporate accountability.
-
-> 📌 **Previous Work**: This builds upon [Project AIMS Phase 1](https://github.com/mila-ai4h/ai4h_aims-uk), which analysed UK-based organisations' statements on modern slavery.
-
-This repository contains:
-1. **Two published research papers** and their associated artifacts
-2. **AIMS Hackathon 2025** resources and winning solutions
-
-> 💡 For the complete list of publications and project details, visit the [**Project AIMS website**](https://mila.quebec/en/ai4humanity/applied-projects/ai-against-modern-slavery-aims).
+> ### 📌 Using this work? You must cite it.
+> Everything here is free to use, adapt, and build on under **[CC-BY-4.0](LICENSE)** (data, figures,
+> docs) and **[MIT](code/LICENSE)** (code). Both licences carry one condition: **attribution**.
+> Cite the paper you actually drew on — the BibTeX sits at the top of each
+> [paper folder](#where-to-go) — and cite the dataset DOI
+> [`10.6084/m9.figshare.28489340`](https://doi.org/10.6084/m9.figshare.28489340) if you use the data.
+> [**Full citation guide ↓**](#-how-to-cite)
 
 ---
 
-## 📚 Research Publications
+## What this project does
 
-This research was supported by the **National Action Plan to Combat Modern Slavery 2020-25 Grants Program**, administered by the Attorney-General's Department of Australia.
+Modern slavery legislation in Australia, the UK, and Canada requires large organisations to publish
+annual statements describing what they are doing about modern slavery risks in their operations and
+supply chains. More than **90,000 statements** now sit across the three national registries. Reading
+them, comparing them, and judging whether they actually meet the mandatory reporting criteria is
+slow, expert-intensive work — so most statements are never meaningfully reviewed.
 
-### 🔗 Associated Resources
+Project AIMS builds the open datasets, models, and tools that make that review tractable: expert
+sentence-level annotations aligned to the **Australian Modern Slavery Act**, benchmarks for
+evaluating language models on compliance assessment, and frameworks that keep a human reviewer in
+the loop. The annotation scheme is Australian throughout — the UK and Canadian test sets are
+annotated against the same AU MSA criteria so the three jurisdictions stay directly comparable.
 
-- 📂 **Dataset**: Available on [Figshare](https://figshare.com/s/1b92ebfde3f2de2be0cf) and [Hugging Face](https://huggingface.co/datasets/mila-ai4h/AIMS.au)
-- 💬 **Prompts**: Experimental prompts available in [AIMSPrompts.docx](AIMSPrompts.docx)
-- 💻 **Code**: Reproducible experiments in the [`code`](code) directory
-- 📦 **Model Weights**:
-  - Llama3.2 3B (+100 words context) - Best performing model from AIMS.au and AIMSCheck: [Figshare](https://figshare.com/articles/dataset/LLAMA_context_100_weights/29174045?file=54904154)
-  - ModernBERT - Smallest and best performing model from AIMSDistil: [Google Drive](https://drive.google.com/file/d/12DXXgi5rNRf8r8EKnjmzwR6GnNVTc1WI/view?usp=sharing)
+A collaboration between **[Mila — Quebec AI Institute](https://mila.quebec/)** and **[Queensland
+University of Technology](https://www.qut.edu.au/)**, with hackathon delivery by **[Fundación Pasos
+Libres](https://fundacionpasoslibres.org/)**. Supported by the National Action Plan to Combat Modern
+Slavery 2020–25 Grants Program, administered by the Attorney-General's Department of Australia.
 
----
-
-## 📄 Paper 1: AIMS.au Dataset
-
-**Full Title**: *AIMS.au: A Dataset for the Analysis of Modern Slavery Countermeasures in Corporate Statements*  
-**Venue**: ICLR 2025  
-**Paper**: [arXiv:2502.07022](https://arxiv.org/abs/2502.07022)  
-**License**: CC-BY-4.0
-### Overview
-
-**AIMS.au** is the most extensive open-source dataset with detailed annotations explicitly aligned with the mandatory criteria of the Australian Modern Slavery Act (MSA). It supports the analysis of modern slavery statements from Australian-based organisations and enables the evaluation of Large Language Models (LLMs) in assessing corporate compliance.
-
-### Key Features
-
-- **📊 Comprehensive Coverage**: Over **5,700** modern slavery statements from the [Australian Modern Slavery Register](https://modernslaveryregister.gov.au/)
-- **🏷️ Detailed Annotations**: Sentence-level labels by human annotators and domain experts
-  - Basic criteria (approval, signature, entity identification): single-annotated
-  - Complex criteria (requiring nuanced interpretation): double-annotated for 4,657 statements
-  - Over **800,000** labeled sentences covering **7,270** Australian entities from **2019 to 2023**
-- **⭐ Gold Standard Subsets**: Two expert-annotated subsets with **50** unique statements each for high-reliability evaluations
-
-
-### Data Structure
-
-The dataset consists of three annotation levels:
-
-1. **Annotated Dataset** – For model training
-2. **Gold Subset (single expert validation)** – For model validation
-3. **Gold Subset (triple-expert consensus)** – For model testing (highest trust level)
-
-<img src="diagram.png" width="800">
-
-### Dataset Documentation
-
-The following diagram illustrates the correspondence between AU MSA mandatory criteria and the annotation questions in AIMS.au, including fictitious examples:
-
-<img src="example.png" width="800">
-
-### Dataset Statistics
-
-Text distribution across 5,731 modern slavery statements:
-
-<img src="stats.png" width="800">
-
-### Experimental Setup
-
-**Task**: Sentence-level binary classification across 11 questions
-
-**Models Evaluated**:
-- **Fine-tuned**: DistilBERT, BERT, Llama2 (7B), Llama3.2 (3B)
-- **Zero-shot**: GPT-3.5 Turbo, GPT-4o, Llama3.2 (3B)
-
-**Input Settings**:
-- **No context**: Classify using only the target sentence
-- **With context**: Classify using sentence ±100 surrounding words
-
-**Key Results**:
-- ✅ Fine-tuned models outperform zero-shot models
-- ✅ Including context improves classification performance
-
-> 📖 Full experimental details available in the paper
+> **Phase 1** analysed UK statements and lives at
+> [mila-ai4h/ai4h_aims-uk](https://github.com/mila-ai4h/ai4h_aims-uk).
+> This repository is **Phase 2** — Australia and cross-jurisdictional work.
 
 ---
 
-## 📄 Paper 2: AIMSCheck Framework
+## Where to go
 
-**Full Title**: *AIMSCheck: Leveraging LLMs for AI-Assisted Review of Modern Slavery Statements Across Jurisdictions*  
-**Venue**: ACL 2025  
-**Paper**: [arXiv:2506.01671](https://arxiv.org/abs/2506.01671)
+Each output has its own folder with a full README, figures, and reproduction notes.
 
-### Overview
-
-**AIMSCheck** is an end-to-end framework for AI-assisted review of modern slavery statements using Large Language Models. It addresses two critical challenges:
-
-1. The difficulty of compliance verification due to diverse and complex disclosure language
-2. The need for generalizable AI tools across jurisdictions with different legal standards
-
-### Key Contributions
-
-1. **AIMSCheck Framework**: End-to-end compliance validation system
-2. **New Datasets**: AIMS.uk (United Kingdom) and AIMS.ca (Canada) for cross-jurisdictional benchmarking
-
-### AIMSCheck Architecture
-
-<img src="AIMSCheck.PNG" width="800">
-
-The framework operates at three distinct levels:
-
-1. **Sentence-Level**: Classifies relevance to compliance criteria
-2. **Token-Level**: Enhances transparency through explainability metrics
-3. **Evidence Status**: Tracks sentences supporting or refuting implementation/commitments
-
-### Cross-Jurisdictional Generalizability
-
-We created a jurisdictional mapping to assess generalizability across regions:
-
-<img src="Mapping.PNG" width="800">
-
-**AIMS.uk and AIMS.ca** datasets each contain 50 manually annotated statements by domain experts, facilitating cross-jurisdictional evaluation.
-
-### Experimental Setup
-
-**Task**: Sentence-level binary classification across 9 compliance criteria + evidence status tracking
-
-**Models Evaluated**:
-- **Zero-shot**: GPT-3.5 Turbo, GPT-4o
-- **Few-shot**: GPT-4o with Chain-of-Thought (CoT) and examples
-- **Reasoning**: DeepSeek-R1
-- **Fine-tuned**: DistilBERT, BERT, LLaMA 2 (7B), LLaMA 3.2 (3B)
-
-**Input Settings**: 
-- No context (single sentence)
-- With context (sentence ±100 words)
-- Token-level explanation using SHAP
-
-### Key Results
-
-1. ✅ Fine-tuned models on AIMS.au generalise well to AIMS.uk and AIMS.ca, outperforming zero-shot and few-shot baselines
-2. ✅ Chain-of-Thought few-shot prompting improves GPT-4o performance
-3. ✅ Contextual input (±100 words) improves performance across all models
+| | Output | What it is | Venue |
+|---|---|---|---|
+| 📊 | **[AIMS.au](papers/aims-au/)** | The core dataset — 5,731 Australian statements, 800k+ expert-labelled sentences | ICLR 2025 |
+| 🔍 | **[AIMSCheck](papers/aimscheck/)** | Three-level framework for AI-assisted compliance review, plus the AIMS.uk and AIMS.ca datasets | ACL 2025 |
+| 🪶 | **[AIMSDistill](papers/aimsdistill/)** | Four specialised teachers distilled into one 340M student that beats an ≈8B ensemble at ~8× the speed | ESWA 2026 |
+| ❓ | **[AIMS-QA](papers/aimsqa/)** | Question-answering framework that assesses statements *beyond* minimum legal compliance | Data & Policy 2026 |
+| 🏆 | **[AIMS Hackathon 2025](hackathon-2025/)** | Global innovation challenge — 227 participants, 38 countries, 51 teams, 23 final solutions | — |
+| 💻 | **[`code/`](code/)** | Shared, reproducible experiment codebase used across the papers | — |
 
 ---
 
-## 📖 Citation
+## 📦 Data and models — where everything lives
 
-If you use AIMS.au or AIMSCheck in your research, please cite our papers:
-```bibtex
-@article{bora2025aimsau,
-  title={AIMS.au: A Dataset for the Analysis of Modern Slavery Countermeasures in Corporate Statements},
-  author={Bora, Adriana Eufrosina and St-Charles, Pierre-Luc and Bronzi, Mirko and Fansi Tchango, Arsène and Rousseau, Bruno and Mengersen, Kerrie},
-  journal={arXiv preprint arXiv:2502.07022},
-  year={2025},
-  note={Camera ready. ICLR 2025},
-  url={https://arxiv.org/abs/2502.07022},
-  doi={10.48550/arXiv.2502.07022}
-}
+Two homes, on purpose. **Figshare** is the archival record of the data: a DOI, a fixed version
+history, the thing you cite. **Hugging Face** is the working copy: loads straight into code with no
+download step.
 
-@article{bora2025aimscheck,
-  title={AIMSCheck: Leveraging LLMs for AI-Assisted Review of Modern Slavery Statements Across Jurisdictions},
-  author={Bora, Adriana Eufrosina and Arodi, Akshatha and Zhang, Duoyi and Bannister, Jordan and Bronzi, Mirko and Fansi Tchango, Arsène and Bashar, Md Abul and Nayak, Richi and Mengersen, Kerrie},
-  journal={arXiv preprint arXiv:2506.01671},
-  year={2025},
-  note={To appear at ACL 2025},
-  url={https://arxiv.org/abs/2506.01671},
-  doi={10.48550/arXiv.2506.01671}
-}
+### 🇦🇺🇬🇧🇨🇦 Datasets
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**📚 Figshare — cite this**
+
+[![DOI](https://img.shields.io/badge/DOI-10.6084%2Fm9.figshare.28489340-orange?style=for-the-badge)](https://doi.org/10.6084/m9.figshare.28489340)
+
+The complete, archived record — all three jurisdictions plus the annotation specifications.
+**18.3 GB · CC-BY-4.0**
+
+</td>
+<td width="50%" valign="top">
+
+**🤗 Hugging Face — load this**
+
+[![HF](https://img.shields.io/badge/%F0%9F%A4%97-mila--ai4h%2FAIMS.au-yellow?style=for-the-badge)](https://huggingface.co/datasets/mila-ai4h/AIMS.au)
+
+The annotated Australian subset, ready to stream.
+
+```python
+from datasets import load_dataset
+ds = load_dataset("mila-ai4h/AIMS.au")
 ```
 
----
+</td>
+</tr>
+</table>
 
-## 🤝 AIMS Hackathon 2025
+What's inside the [Figshare record](https://doi.org/10.6084/m9.figshare.28489340):
 
-### AI Against Modern Slavery Innovation Challenge
+| File | Jurisdiction | Size |
+|---|---|---:|
+| `statements.full.20231129.deeplake.zip` — full corpus, DeepLake format | 🇦🇺 Australia | 18.2 GB |
+| `AIMS.au_annotated…csv` — annotated set, excl. test/validation | 🇦🇺 Australia | 76 MB |
+| `test_uk.csv` — AIMS.uk test set | 🇬🇧 United Kingdom | 473 kB |
+| `test_ca.csv` — AIMS.ca test set | 🇨🇦 Canada | 688 kB |
+| `AIMS Annotations Specifications.pdf` — annotation guidelines | 🇦🇺 Australia | 19 MB |
 
-[The AIMS Hackathon 2025](https://fundacionpasoslibres.org/aimshackathon/) was a global online innovation competition organised by [Mila - Quebec AI Institute](https://mila.quebec/), [Queensland University of Technology (QUT)](https://www.qut.edu.au/) and [Fundacion Pasos Libres](https://fundacionpasoslibres.org/) that brought together developers, entrepreneurs, researchers, and human rights advocates to develop AI-driven solutions to combat modern slavery. 
+The DOI always resolves to the latest version; append `.v2` to cite a specific one.
 
-**Hackathon Goals:**
-- 🌍 Raise public awareness of modern slavery
-- 🎓 Improve participants' technical and domain expertise
-- 🤝 Foster interdisciplinary collaboration
-- 🚀 Accelerate adoption of open-source Project AIMS tools
+> **All three datasets use the Australian MSA annotation scheme.** The UK and Canadian statements
+> are annotated against AU MSA criteria rather than their own local wording, which is what makes
+> cross-jurisdictional comparison valid. See the Annotation Specifications for the full scheme.
 
-**Participation:** The hackathon brought together over **50 speakers and judges** and more than **50 teams**, totaling **220+ registered participants** from **19 countries**, with **23 teams** advancing to the final judging stage.
+### 🧠 Model weights
 
----
+| Model | Used by | Where |
+|---|---|---|
+| Llama 3.2 3B (+100-word context) | Best performer in [AIMS.au](papers/aims-au/) and [AIMSCheck](papers/aimscheck/) | [![Figshare](https://img.shields.io/badge/Figshare-weights-orange)](https://figshare.com/articles/dataset/LLAMA_context_100_weights/29174045?file=54904154) |
+| ModernBERT distilled students — `au.pth`, `uk.pth`, `ca.pth` (1.47 GB each) | [AIMSDistill](papers/aimsdistill/) | [![Drive](https://img.shields.io/badge/Google%20Drive-folder-lightgrey)](https://drive.google.com/drive/folders/1MqAGkXt4-6S6go0ctsPkLQKvkwgLu7GZ) |
+| AIMS-QA context classifier | [AIMS-QA](papers/aimsqa/) Agent 1 — this is the same `au.pth` file | [![Drive](https://img.shields.io/badge/Google%20Drive-folder-lightgrey)](https://drive.google.com/drive/folders/1MqAGkXt4-6S6go0ctsPkLQKvkwgLu7GZ) |
+| Teacher-model logits | [AIMSDistill](papers/aimsdistill/) reproduction | [`logits/`](https://drive.google.com/drive/folders/1MqAGkXt4-6S6go0ctsPkLQKvkwgLu7GZ) in the same Drive folder |
+| AIMS-QA SentenceBERT retriever (87 MB) | [AIMS-QA](papers/aimsqa/) Agent 2 | *not yet released* |
 
-### 🏆 Winners & Award Recipients
+Model weights are too large for a git repository — GitHub's free Git LFS allowance is 1 GB total,
+and a single student checkpoint is 1.47 GB. They are hosted externally instead, and the code
+downloads what it needs.
 
-#### 🥇 **WINNER & Best in Blue Sky Innovation (Challenge 4): Commit Hope**
-- **Repository**: [AIMS-Commit-Hope](https://github.com/fpasoslibres/AIMS-Commit-Hope) - TypeScript
-- **Website**: [commithope.org](https://www.commithope.org/aimshackathon/compliance)
-- **Resources**:
-  - [Presentation Video](https://www.youtube.com/watch?v=saguXuoUhcE)
-  - [Demo Video](https://www.youtube.com/watch?v=31C5L0IUP1Y)
+## Prompts
 
-#### 🥈 **Team Synapse** — Best in Data Mining, Processing & Enhancement (Challenge 1)
-- **Repository**: [AIMS-Team-Synapse](https://github.com/fpasoslibres/AIMS-Team-Synapse) - Jupyter Notebook
-- **Resources**:
-  - [Presentation Video](https://www.youtube.com/watch?v=_OubzlX-qhA)
-  - [Demo Video](https://drive.google.com/drive/folders/16kIWEin_ucPzA9cHODtQjf-jtXjdOhK8)
+All **40 experimental prompts** from [AIMS.au](papers/aims-au/) and [AIMSCheck](papers/aimscheck/)
+are in [`prompts/`](prompts/) as plain text — one file per criterion per variant, so they can be
+diffed, reviewed, and reused without opening a Word document.
 
-#### 🥈 **The Due Diligents** — Best in AI Model Optimisation & Explainability (Challenge 2)
-- **Repository**: [AIMS-the-due-diligents](https://github.com/fpasoslibres/AIMS-the-due-diligents) - Python
-- **Resources**:
-  - [Presentation Video](https://drive.google.com/file/d/1mhfHqO1HWl3FutQ3imVKwjz4qfB99yPj/view?usp=drive_link)
-  - [Demo Video](https://vimeo.com/1120437663?share=copy)
+| | Prompts | Variants |
+|---|---|---|
+| [`prompts/aims-au/`](prompts/aims-au/) | 22 | no-context · with-context (±100 words) |
+| [`prompts/aimscheck/`](prompts/aimscheck/) | 18 | zero-shot CoT · few-shot CoT |
 
-#### 🥈 **Firefly** — Best in Application & Visualisation for Stakeholder Use (Challenge 3)
-- **Repository**: [AIMS-Firefly](https://github.com/fpasoslibres/AIMS-Firefly) - C#
-- **Resources**:
-  - [Presentation Video](https://drive.google.com/file/d/1AyDuQPehxk0eya7Y9stKRThsVkZuEbzB/view?usp=drive_link)
-  - [Demo Video](https://drive.google.com/file/d/1-CqB5CkJvI7OvmJRQ0cASjpPQIbuW0Ng/view?usp=drive_link)
-
-### ⭐ Special Recognition Awards
-
-The following teams received Special Recognition at the AIMS Hackathon 2025 for excellence in specific areas:
-
-- **⭐ BigMilk** — [AIMS-Big-Milk](https://github.com/fpasoslibres/AIMS-Big-Milk) - Strong Consumer-Focused Innovation
-- **⭐ Justice Miners** — [AIMS-Justice-Miners](https://github.com/fpasoslibres/AIMS-Justice-Miners) - Strong Code Documentation Practices
-- **⭐ TSU Montreal** — [AIMS-TSU-Montreal](https://github.com/fpasoslibres/AIMS-TSU-Montreal) - Strong Focus on Explainability and Modularity
-- **⭐ ChainBreaker** — [AIMS-ChainBreaker](https://github.com/fpasoslibres/AIMS-ChainBreaker) - Strong User Interface Design
-- **⭐ PolyML** — [AIMS-PolyML](https://github.com/fpasoslibres/AIMS-PolyML) - Innovative Approach to News Article Integration
----
-
-### 📂 All Finalist Teams
-
-All 23 finalist solutions selected for the judging stage:
-
-1. [AIMS-TSU-Montreal](https://github.com/fpasoslibres/AIMS-TSU-Montreal)⭐ 
-2. [AIMS-AIbolition](https://github.com/fpasoslibres/AIMS-AIbolition) 
-3. [AIMS-PolyML](https://github.com/fpasoslibres/AIMS-PolyML)⭐ 
-4. [AIMS-Gongpals](https://github.com/fpasoslibres/AIMS-Gongpals)
-5. [AIMS-Data-Phandas-](https://github.com/fpasoslibres/AIMS-Data-Phandas-) 
-6. [AIMS-Meow](https://github.com/fpasoslibres/AIMS-Meow) 
-7. [AIMS-ChainBreaker](https://github.com/fpasoslibres/AIMS-ChainBreaker)⭐ 
-8. [AIMS-Code4Freedom-AUS](https://github.com/fpasoslibres/AIMS-Code4Freedom-AUS) 
-9. [AIMS-Big-Milk](https://github.com/fpasoslibres/AIMS-Big-Milk)⭐ 
-10. [AIMS-Quokkas](https://github.com/fpasoslibres/AIMS-Quokkas) 
-11. [AIMS-Team-Synapse](https://github.com/fpasoslibres/AIMS-Team-Synapse)🥈
-12. [AIMS-New-Horizons-Foundation](https://github.com/fpasoslibres/AIMS-New-Horizons-Foundation) 
-13. [AIMS-Winning-Team-](https://github.com/fpasoslibres/AIMS-Winning-Team-) 
-14. [AIMS-AI-Against-Chains](https://github.com/fpasoslibres/AIMS-AI-Against-Chains) 
-15. [AIMS-the-due-diligents](https://github.com/fpasoslibres/AIMS-the-due-diligents)🥈
-16. [AIMS-Justice-Miners](https://github.com/fpasoslibres/AIMS-Justice-Miners)⭐ 
-17. [AIMS-Firefly](https://github.com/fpasoslibres/AIMS-Firefly)🥈
-18. [AIMS-Commit-Hope](https://github.com/fpasoslibres/AIMS-Commit-Hope)🥇
-19. [AIMS-out-slavery-solution](https://github.com/fpasoslibres/AIMS-out-slavery-solution) 
-20. [AIMS-Code4Freedom-CA](https://github.com/fpasoslibres/AIMS-Code4Freedom-CA) 
-21. [AIMS-50M](https://github.com/fpasoslibres/AIMS-50M) 
-22. [AIMS-The-Aula-Team](https://github.com/fpasoslibres/AIMS-The-Aula-Team) 
-23. [AIMS-Code-knights](https://github.com/fpasoslibres/AIMS-Code-knights) 
-
-[View all hackathon repositories →](https://github.com/fpasoslibres?tab=repositories)
+They encode the annotation guidelines in prose — reading the Approval prompt is the quickest way to
+see why "considered by the board" doesn't satisfy the criterion. See
+[`prompts/README.md`](prompts/README.md) for the full index.
 
 ---
 
-## 🌟 Impact
+## 🔁 Reproducibility
 
-This hackathon brought together multidisciplinary teams from around the world to:
-- 🔍 Raise awareness of modern slavery and human trafficking
-- 💻 Develop innovative AI-driven solutions for compliance analysis
-- 🤝 Foster collaboration between technologists and human rights advocates
-- 🚀 Advance open-source tools for corporate transparency and accountability
+Every paper in this repository can be reproduced from what is public: the data (Figshare DOI),
+the prompts (`prompts/`), the configs and code (`code/`, `papers/*/src/`), and the released
+weights. Each paper folder has a **Reproduce** section with the exact commands.
+
+| Output | Reproduce with | Code state used in the paper |
+|---|---|---|
+| [AIMS.au](papers/aims-au/#reproduce) | Hydra configs in [`code/`](code/) — `python train.py experiment=…` | release [`v1`](https://github.com/mila-ai4h/ai4h_aims-au/releases/tag/v1) |
+| [AIMSCheck](papers/aimscheck/#reproduce) | same codebase + [`prompts/aimscheck/`](prompts/aimscheck/) + evidence-tracking notebooks | release [`v1`](https://github.com/mila-ai4h/ai4h_aims-au/releases/tag/v1) |
+| [AIMSDistill](papers/aimsdistill/) | [`Duoyi1/AimsDistill-paper`](https://github.com/Duoyi1/AimsDistill-paper) + teacher logits + released students | that repository, `main` |
+| [AIMS-QA](papers/aimsqa/#reproduce) | [`papers/aimsqa/src/`](papers/aimsqa/src/) runbook — `pipeline.py` | this repository |
+
+Setup, common to everything driven from `code/`:
+
+```bash
+git clone https://github.com/mila-ai4h/ai4h_aims-au.git
+cd ai4h_aims-au/code
+conda create -n qut01 python=3.11 pip && conda activate qut01
+pip install -r requirements.txt
+cp .env.template .env   # set DATA_ROOT and OUTPUT_ROOT
+```
+
+Full framework documentation is in [`code/README.md`](code/README.md). If a reproduction fails,
+[open an issue](https://github.com/mila-ai4h/ai4h_aims-au/issues) — failed replications are as
+useful to us as successful ones.
 
 ---
+
+## 📖 How to cite
+
+**Citation is a licence condition, not a courtesy.** CC-BY-4.0 and MIT both permit reuse,
+including commercially, on the condition that you give appropriate credit. Please cite the specific
+output you used:
+
+| If you used… | Cite |
+|---|---|
+| The dataset (any jurisdiction) | Figshare DOI [`10.6084/m9.figshare.28489340`](https://doi.org/10.6084/m9.figshare.28489340) **and** the AIMS.au paper |
+| The AIMS.au benchmark or annotations | Bora et al., **ICLR 2025** → [BibTeX](papers/aims-au/#citation) |
+| AIMS.uk / AIMS.ca, or the review framework | Bora et al., **ACL 2025** → [BibTeX](papers/aimscheck/#citation) |
+| The distilled model or distillation method | Bora, Zhang et al., **ESWA 2026** → [BibTeX](papers/aimsdistill/#citation) |
+| The question taxonomy or QA pipeline | Bora et al., **Data & Policy 2026** → [BibTeX](papers/aimsqa/#citation) |
+| The repository as a whole | [`CITATION.cff`](CITATION.cff) — GitHub's **Cite this repository** button, sidebar |
+
+Using several? Cite each one you relied on. If you're unsure which applies,
+[ask](mailto:adrianaeufrosina.bora@connect.qut.edu.au) — we would rather help than be miscited.
+
+### Attribution text
+
+For non-academic reuse — dashboards, reports, tools, teaching material — include:
+
+> Project AIMS (AI Against Modern Slavery) by Mila — Quebec AI Institute and Queensland University
+> of Technology, licensed under CC-BY-4.0.
+> https://github.com/mila-ai4h/ai4h_aims-au
+
+### If you build on this
+
+We'd genuinely like to know — [open an issue](https://github.com/mila-ai4h/ai4h_aims-au/issues) or
+[email us](mailto:adrianaeufrosina.bora@connect.qut.edu.au). Downstream uses help make the case for
+continued funding of open research infrastructure in this space.
+
+## 🤝 Contributing
+
+Corrections to annotations, new jurisdictions, evaluation code, and documentation improvements are
+all welcome — [open an issue](https://github.com/mila-ai4h/ai4h_aims-au/issues) first for anything
+beyond a typo. Two things to know: all three datasets are annotated against the **Australian MSA
+criteria** (judge a label against those and the Annotation Specifications, not local UK/CA
+wording), and please don't submit statement text from elsewhere or anything expanding personal
+data beyond the public source documents. Contributions land under the repository licences below.
 
 ## 📄 License
 
-This repository is licensed under the **Creative Commons Attribution 4.0 International License (CC-BY-4.0)**, unless otherwise stated.
+| What | Licence | Means |
+|---|---|---|
+| Data, annotations, figures, documentation | **[CC-BY-4.0](LICENSE)** | Use, share, adapt, commercially — **with credit** |
+| Code in [`code/`](code/) and paper `src/` folders | **[MIT](code/LICENSE)** | Use, modify, distribute, sell — just keep the copyright notice |
 
-Unless otherwise stated, this licence applies to the entire GitHub repository, including all files, folders, subdirectories, documentation, research artefacts, datasets, and released model weights contained in this repository.
+Both licences are permissive. Neither is public domain: **attribution is mandatory**, and stripping
+it is a licence breach, not an oversight. See [How to cite](#-how-to-cite).
 
-Users are responsible for complying with any additional terms that apply to upstream models, third-party datasets, dependencies, externally hosted files, or linked resources.
+**Not covered by these licences:**
 
-### Recommended attribution
+- The **source statements** themselves — Crown/corporate copyright, redistributed under the terms
+  of the registries they came from.
+- **Upstream models** (ModernBERT, Llama, Gemma, GPT) — each carries its own licence and
+  acceptable-use policy, which you must comply with independently.
+- **Hackathon team solutions** — licensed separately by their authors; see each repository.
 
-When using, redistributing, or adapting material from this repository, please use the following attribution:
-
-> Project AIMS (AI Against Modern Slavery) by Mila - Quebec AI Institute and Queensland University of Technology (QUT), licensed under CC-BY-4.0. Available at: https://github.com/mila-studios/ai4h_aims-au
-
-Please also cite the relevant paper listed in the [Citation](#-citation) section when using AIMS.au, AIMSCheck, AIMSDistil, or associated research artefacts.
+**Responsible use.** These tools are decision-support for human reviewers, not automated compliance
+verdicts. Every paper here states that misclassifying a corporate disclosure carries legal and
+ethical consequences and that full automation is not recommended. Please don't publish automated
+judgements about named companies without expert review.
 
 ## 📞 Contact
 
-For questions or collaboration opportunities, please visit:
-- [Project AIMS Website](https://mila.quebec/en/ai4humanity/applied-projects/ai-against-modern-slavery-aims)
-
-
+- **Project site:** [mila.quebec — AI Against Modern Slavery](https://mila.quebec/en/ai4humanity/applied-projects/ai-against-modern-slavery-aims)
+- **Code or data questions:** [open an issue](https://github.com/mila-ai4h/ai4h_aims-au/issues/new/choose)
+- **Contact:** Adriana Eufrosina Bora — [adrianaeufrosina.bora@connect.qut.edu.au](mailto:adrianaeufrosina.bora@connect.qut.edu.au)
