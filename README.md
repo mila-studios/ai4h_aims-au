@@ -127,10 +127,10 @@ reporting year, as in [AIMSCheck](papers/aimscheck/).
 | Model | Used by | Where |
 |---|---|---|
 | Llama 3.2 3B (+100-word context) | Best performer in [AIMS.au](papers/aims-au/) and [AIMSCheck](papers/aimscheck/) | [![Figshare](https://img.shields.io/badge/Figshare-weights-orange)](https://figshare.com/articles/dataset/LLAMA_context_100_weights/29174045?file=54904154) |
-| ModernBERT distilled students — `au.pth`, `uk.pth`, `ca.pth` (1.47 GB each) | [AIMSDistill](papers/aimsdistill/) | [![Drive](https://img.shields.io/badge/Google%20Drive-folder-lightgrey)](https://drive.google.com/drive/folders/1MqAGkXt4-6S6go0ctsPkLQKvkwgLu7GZ) |
-| AIMS-QA context classifier | [AIMS-QA](papers/aimsqa/) Agent 1 — this is the same `au.pth` file | [![Drive](https://img.shields.io/badge/Google%20Drive-folder-lightgrey)](https://drive.google.com/drive/folders/1MqAGkXt4-6S6go0ctsPkLQKvkwgLu7GZ) |
-| Teacher-model logits | [AIMSDistill](papers/aimsdistill/) reproduction | [`logits/`](https://drive.google.com/drive/folders/1MqAGkXt4-6S6go0ctsPkLQKvkwgLu7GZ) in the same Drive folder |
-| AIMS-QA SentenceBERT retriever (87 MB) | [AIMS-QA](papers/aimsqa/) Agent 2 | *not yet released* |
+| ModernBERT distilled students — `au.pth`, `uk.pth`, `ca.pth` (1.47 GB each) | [AIMSDistill](papers/aimsdistill/) | [![Figshare](https://img.shields.io/badge/Figshare-DOI-orange)](https://doi.org/10.6084/m9.figshare.33261576) |
+| AIMS-QA context classifier | [AIMS-QA](papers/aimsqa/) Agent 1 — this is the same `au.pth` file | [![Figshare](https://img.shields.io/badge/Figshare-DOI-orange)](https://doi.org/10.6084/m9.figshare.33261576) |
+| Teacher-model logits | [AIMSDistill](papers/aimsdistill/) reproduction | [`logits.zip`](https://doi.org/10.6084/m9.figshare.33261576) — in the same record |
+| AIMS-QA SentenceBERT retriever (87 MB) | [AIMS-QA](papers/aimsqa/) Agent 2 | [![Figshare](https://img.shields.io/badge/Figshare-DOI-orange)](https://doi.org/10.6084/m9.figshare.33261639) |
 
 Model weights are too large for a git repository — GitHub's free Git LFS allowance is 1 GB total,
 and a single student checkpoint is 1.47 GB. They are hosted externally instead, and the code
