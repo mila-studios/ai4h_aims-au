@@ -10,7 +10,9 @@
 **DOI:** *TODO: add once Cambridge assigns it*
 
 Adriana Eufrosina Bora¹², Duoyi Zhang², Hannah Thinyane³, Md Abul Bashar², Richi Nayak², Kerrie Mengersen²
-<sub>¹ Mila — Quebec AI Institute · ² Queensland University of Technology · ³ Diginex Ltd</sub>
+<sub>¹ Mila — Quebec AI Institute · ² Queensland University of Technology · ³ Diginex Ltd
+
+</sub>
 ← [Back to Project AIMS](../../README.md)
 
 ---
