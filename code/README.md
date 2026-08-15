@@ -28,8 +28,8 @@ First, install the framework and its dependencies:
 
 ```bash
 # clone project
-git clone https://github.com/milatechtransfer/qut01-aims
-cd qut01-aims
+git clone https://github.com/mila-studios/ai4h_aims-au.git
+cd ai4h_aims-au/code
 
 # create conda environment
 conda create -n qut01 python=3.11 pip
