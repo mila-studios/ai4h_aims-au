@@ -9,8 +9,8 @@
 **Venue:** *Data & Policy* (Cambridge University Press), Data for Policy conference paper, 2026 ·
 **DOI:** *TODO: add once Cambridge assigns it*
 
-Adriana Eufrosina Bora, Duoyi Zhang, Hannah Thinyane, Md Abul Bashar, Richi Nayak, Kerrie Mengersen
-
+Adriana Eufrosina Bora¹², Duoyi Zhang², Hannah Thinyane³, Md Abul Bashar², Richi Nayak², Kerrie Mengersen²
+<sub>¹ Mila — Quebec AI Institute · ² Queensland University of Technology · ³ Diginex Ltd</sub>
 ← [Back to Project AIMS](../../README.md)
 
 ---
