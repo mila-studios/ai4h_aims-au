@@ -44,7 +44,7 @@ Libres](https://fundacionpasoslibres.org/)**. Supported by the National Action P
 Slavery 2020–25 Grants Program, administered by the Attorney-General's Department of Australia.
 
 > **Phase 1** analysed UK statements and lives at
-> [mila-ai4h/ai4h_aims-uk](https://github.com/mila-ai4h/ai4h_aims-uk).
+> [mila-studios/ai4h_aims-uk](https://github.com/mila-studios/ai4h_aims-uk).
 > This repository is **Phase 2** — Australia and cross-jurisdictional work.
 
 ---
@@ -161,15 +161,15 @@ weights. Each paper folder has a **Reproduce** section with the exact commands.
 
 | Output | Reproduce with | Code state used in the paper |
 |---|---|---|
-| [AIMS.au](papers/aims-au/#reproduce) | Hydra configs in [`code/`](code/) — `python train.py experiment=…` | release [`v1`](https://github.com/mila-ai4h/ai4h_aims-au/releases/tag/v1) |
-| [AIMSCheck](papers/aimscheck/#reproduce) | same codebase + [`prompts/aimscheck/`](prompts/aimscheck/) + evidence-tracking notebooks | release [`v1`](https://github.com/mila-ai4h/ai4h_aims-au/releases/tag/v1) |
+| [AIMS.au](papers/aims-au/#reproduce) | Hydra configs in [`code/`](code/) — `python train.py experiment=…` | release [`v1`](https://github.com/mila-studios/ai4h_aims-au/releases/tag/v1) |
+| [AIMSCheck](papers/aimscheck/#reproduce) | same codebase + [`prompts/aimscheck/`](prompts/aimscheck/) + evidence-tracking notebooks | release [`v1`](https://github.com/mila-studios/ai4h_aims-au/releases/tag/v1) |
 | [AIMSDistill](papers/aimsdistill/) | [`Duoyi1/AimsDistill-paper`](https://github.com/Duoyi1/AimsDistill-paper) + teacher logits + released students | that repository, `main` |
 | [AIMS-QA](papers/aimsqa/#reproduce) | [`papers/aimsqa/src/`](papers/aimsqa/src/) runbook — `pipeline.py` | this repository |
 
 Setup, common to everything driven from `code/`:
 
 ```bash
-git clone https://github.com/mila-ai4h/ai4h_aims-au.git
+git clone https://github.com/mila-studios/ai4h_aims-au.git
 cd ai4h_aims-au/code
 conda create -n qut01 python=3.11 pip && conda activate qut01
 pip install -r requirements.txt
@@ -177,7 +177,7 @@ cp .env.template .env   # set DATA_ROOT and OUTPUT_ROOT
 ```
 
 Full framework documentation is in [`code/README.md`](code/README.md). If a reproduction fails,
-[open an issue](https://github.com/mila-ai4h/ai4h_aims-au/issues) — failed replications are as
+[open an issue](https://github.com/mila-studios/ai4h_aims-au/issues) — failed replications are as
 useful to us as successful ones.
 
 ---
@@ -206,18 +206,18 @@ For non-academic reuse — dashboards, reports, tools, teaching material — inc
 
 > Project AIMS (AI Against Modern Slavery) by Mila — Quebec AI Institute and Queensland University
 > of Technology, licensed under CC-BY-4.0.
-> https://github.com/mila-ai4h/ai4h_aims-au
+> https://github.com/mila-studios/ai4h_aims-au
 
 ### If you build on this
 
-We'd genuinely like to know — [open an issue](https://github.com/mila-ai4h/ai4h_aims-au/issues) or
+We'd genuinely like to know — [open an issue](https://github.com/mila-studios/ai4h_aims-au/issues) or
 [email us](mailto:adrianaeufrosina.bora@connect.qut.edu.au). Downstream uses help make the case for
 continued funding of open research infrastructure in this space.
 
 ## 🤝 Contributing
 
 Corrections to annotations, new jurisdictions, evaluation code, and documentation improvements are
-all welcome — [open an issue](https://github.com/mila-ai4h/ai4h_aims-au/issues) first for anything
+all welcome — [open an issue](https://github.com/mila-studios/ai4h_aims-au/issues) first for anything
 beyond a typo. Two things to know: all three datasets are annotated against the **Australian MSA
 criteria** (judge a label against those and the Annotation Specifications, not local UK/CA
 wording), and please don't submit statement text from elsewhere or anything expanding personal
@@ -249,5 +249,5 @@ judgements about named companies without expert review.
 ## 📞 Contact
 
 - **Project site:** [mila.quebec — AI Against Modern Slavery](https://mila.quebec/en/ai4humanity/applied-projects/ai-against-modern-slavery-aims)
-- **Code or data questions:** [open an issue](https://github.com/mila-ai4h/ai4h_aims-au/issues/new/choose)
+- **Code or data questions:** [open an issue](https://github.com/mila-studios/ai4h_aims-au/issues/new/choose)
 - **Contact:** Adriana Eufrosina Bora — [adrianaeufrosina.bora@connect.qut.edu.au](mailto:adrianaeufrosina.bora@connect.qut.edu.au)

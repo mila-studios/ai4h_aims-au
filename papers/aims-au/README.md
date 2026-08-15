@@ -124,7 +124,7 @@ Any setting can be overridden from the command line, e.g.
 `python train.py experiment=unfrozen_bert_classif trainer.max_epochs=3`.
 
 See [`code/README.md`](../../code/README.md) for the full configuration guide, and the
-[`v1` release](https://github.com/mila-ai4h/ai4h_aims-au/releases/tag/v1) for the code state used
+[`v1` release](https://github.com/mila-studios/ai4h_aims-au/releases/tag/v1) for the code state used
 in the paper.
 
 ## Citation

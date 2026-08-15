@@ -78,7 +78,7 @@ Figures from the [Final Report](https://fundacionpasoslibres.org/wp-content/uplo
 > **Three video links have expired.** The Google Drive files for The Due Diligents' presentation
 > and Firefly's presentation and demo now return "file does not exist". The team repositories and
 > the other videos are unaffected. If you have copies, please
-> [open an issue](https://github.com/mila-ai4h/ai4h_aims-au/issues) — hosting them on the
+> [open an issue](https://github.com/mila-studios/ai4h_aims-au/issues) — hosting them on the
 > [hackathon site](https://fundacionpasoslibres.org/aimshackathon/) or YouTube would keep them alive.
 
 ## ⭐ Special recognition
