@@ -62,6 +62,7 @@ Text distribution across the 5,731 statements:
 |---|---|
 | Dataset | [Figshare DOI 10.6084/m9.figshare.28489340](https://doi.org/10.6084/m9.figshare.28489340) (18.3 GB, CC-BY-4.0) · [Hugging Face](https://huggingface.co/datasets/mila-ai4h/AIMS.au) |
 | Annotation specifications | `AIMS Annotations Specifications.pdf` in the [Figshare record](https://doi.org/10.6084/m9.figshare.28489340) |
+| Statement metadata | [Figshare DOI 10.6084/m9.figshare.30096127](https://doi.org/10.6084/m9.figshare.30096127) — 1.5 MB XLSX, for sector/size/year analysis |
 | Prompts | [`../../prompts/`](../../prompts/) |
 | Best model weights | [Llama 3.2 3B, +100-word context](https://figshare.com/articles/dataset/LLAMA_context_100_weights/29174045?file=54904154) |
 
