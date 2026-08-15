@@ -113,6 +113,11 @@ What's inside the [Figshare record](https://doi.org/10.6084/m9.figshare.28489340
 
 The DOI always resolves to the latest version; append `.v2` to cite a specific one.
 
+**Companion record — [statement metadata](https://doi.org/10.6084/m9.figshare.30096127)**
+(`10.6084/m9.figshare.30096127`, 1.5 MB, CC-BY-4.0). Statement-level metadata for the annotated
+AIMS.au set — join it to the sentence labels to analyse disclosure by sector, entity size, or
+reporting year, as in [AIMSCheck](papers/aimscheck/).
+
 > **All three datasets use the Australian MSA annotation scheme.** The UK and Canadian statements
 > are annotated against AU MSA criteria rather than their own local wording, which is what makes
 > cross-jurisdictional comparison valid. See the Annotation Specifications for the full scheme.
